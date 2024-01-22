@@ -2,9 +2,11 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 
-function myApp(){
+const username = "Chaitanya Anand"
+
+export function MyApp(){
   return (
-    <h1>Let's study react</h1>
+    <h1>Hey {username}, Let's study react</h1>
   )
 }
 
@@ -32,7 +34,13 @@ const newElement = React.createElement(
 )
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-
-  newElement
+<>
+<App />
+<h1>hello</h1>
+<MyApp />
+</>
+  
+  
+  
 
 )
