@@ -1,4 +1,4 @@
-import { useEffect, useState, useRef } from 'react'
+import { useEffect, useState, useRef, useCallback } from 'react'
 import './App.css'
 
 function App() {
@@ -10,7 +10,7 @@ function App() {
 
   const passwordRef = useRef(null)
 
-  const generatePassword = () => {
+  const generatePassword = useCallback(() => {
     let pass = ""
     let str = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
     if (numAllowed) str += "0123456789"
@@ -21,18 +21,18 @@ function App() {
       pass += str[rand]
     }
     setPassword(pass)
-  }
+  }, [length, numAllowed, charAllowed])
 
   const changePassword = useEffect(()=>{
     generatePassword()
   }, [length, numAllowed, charAllowed])
 
-  const copyClipboard = function(){
+  const copyClipboard = useCallback(()=>{
     passwordRef.current?.select()
     passwordRef.current?.setSelectionRange(0,50)
     navigator.clipboard.writeText(password)
     // alert(`Copied Text: ${password}`)
-  }
+  }, [password])
 
   return (
     <>
