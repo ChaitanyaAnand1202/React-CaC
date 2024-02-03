@@ -5,6 +5,7 @@ import './App.css'
 import Slider from "./components/image_slider/Slider"
 import LoadMore from "./components/load_more_button/LoadMore"
 import QRcode from "./components/qr_code_generator/QRcode"
+import TreeView from "./components/tree_view/TreeView"
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
       {/* <Slider /> */}
       <LoadMore total={100} limit={20}/>
       <QRcode />
+      <TreeView />
     </>
   )
 }
