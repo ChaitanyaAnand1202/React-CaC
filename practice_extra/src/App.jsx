@@ -25,7 +25,7 @@ function App() {
       <TreeView /> */}
       {/* <ModalPopup /> */}
       <GithubProfileFinder />
-      {/* <SearchAutocomplete /> */}
+      <SearchAutocomplete />
     </>
   )
 }

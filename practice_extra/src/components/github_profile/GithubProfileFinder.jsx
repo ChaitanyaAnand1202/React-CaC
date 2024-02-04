@@ -52,7 +52,7 @@ function GithubProfileFinder() {
       }
       <div className='h-min-[400px] w-[800px] border-black border-4 p-5 bg-gray-800'>
         {
-          data && Object.keys(data).length ?
+          data && Object.keys(data).length > 2 ?
             <div className='flex flex-col items-center text-2xl gap-4'>
               <div>{data.name}</div>
               <div>
@@ -63,7 +63,7 @@ function GithubProfileFinder() {
               <div>Followers: {data.followers}</div>
               <div>Following: {data.following}</div>
             </div>
-            : null
+            : <div>Please enter correct username</div>
         }
 
       </div>
