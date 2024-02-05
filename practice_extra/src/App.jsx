@@ -24,7 +24,7 @@ function App() {
       <QRcode />
       <TreeView /> */}
       {/* <ModalPopup /> */}
-      <GithubProfileFinder />
+      {/* <GithubProfileFinder /> */}
       <SearchAutocomplete />
     </>
   )
