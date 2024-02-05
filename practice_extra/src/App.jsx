@@ -11,6 +11,7 @@ import ModalPopup from "./components/modal_popup/ModalPopup"
 import GithubProfileFinder from "./components/github_profile/GithubProfileFinder"
 import SearchAutocomplete from "./components/search_autocomplete/SearchAutocomplete"
 import UseFetchTest from "./components/use_fetch_hook/UseFetchTest"
+import UseClickOutsideTest from "./components/use_click_outside/UseClickOutsideTest"
 
 function App() {
 
@@ -27,7 +28,8 @@ function App() {
       {/* <ModalPopup /> */}
       {/* <GithubProfileFinder /> */}
       {/* <SearchAutocomplete /> */}
-      <UseFetchTest />
+      {/* <UseFetchTest /> */}
+      <UseClickOutsideTest />
     </>
   )
 }
