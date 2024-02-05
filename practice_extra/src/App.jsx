@@ -10,6 +10,7 @@ import ScrollIndicator from "./components/scroll_indicator/ScrollIndicator"
 import ModalPopup from "./components/modal_popup/ModalPopup"
 import GithubProfileFinder from "./components/github_profile/GithubProfileFinder"
 import SearchAutocomplete from "./components/search_autocomplete/SearchAutocomplete"
+import UseFetchTest from "./components/use_fetch_hook/UseFetchTest"
 
 function App() {
 
@@ -25,7 +26,8 @@ function App() {
       <TreeView /> */}
       {/* <ModalPopup /> */}
       {/* <GithubProfileFinder /> */}
-      <SearchAutocomplete />
+      {/* <SearchAutocomplete /> */}
+      <UseFetchTest />
     </>
   )
 }
