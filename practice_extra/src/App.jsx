@@ -12,6 +12,8 @@ import GithubProfileFinder from "./components/github_profile/GithubProfileFinder
 import SearchAutocomplete from "./components/search_autocomplete/SearchAutocomplete"
 import UseFetchTest from "./components/use_fetch_hook/UseFetchTest"
 import UseClickOutsideTest from "./components/use_click_outside/UseClickOutsideTest"
+import ScrollTopBottom from "./components/scroll_top_bottom/ScrollTopBottom"
+import ScrollToSection from "./components/scroll_to_section/ScrollToSection"
 
 function App() {
 
@@ -29,7 +31,9 @@ function App() {
       {/* <GithubProfileFinder /> */}
       {/* <SearchAutocomplete /> */}
       {/* <UseFetchTest /> */}
-      <UseClickOutsideTest />
+      {/* <UseClickOutsideTest /> */}
+      {/* <ScrollTopBottom /> */}
+      {/* <ScrollToSection /> */}
     </>
   )
 }
